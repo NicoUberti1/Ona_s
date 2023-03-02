@@ -1,0 +1,369 @@
+@font-face {
+    font-family: "TW cent";
+    src: url("../fonts/TwCenMTStd-LightItalic.otf")
+}
+@font-face {
+    font-family: "Haarlem Deco";
+    src: url("../fonts/Haarlem\ Deco\ DEMO.otf");
+}
+@font-face {
+    font-family: "TW cent BOLD";
+    src: url("../fonts/TwCenMTStd-Bold.otf");
+}
+
+/*Selector Universal*/
+*{
+    margin: 5px; 
+    padding: 0;
+}
+
+p {
+    font-family: "TW cent";
+}
+
+nav {
+    background-color: #000000;
+    border-radius: 75px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.50);
+}
+
+
+
+
+
+h1 {
+    margin-left: 0px;
+    font-family: "Haarlem Deco";
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2 {
+    font-family: "TW cent BOLD";
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3 {
+    font-family: "TW cent BOLD";
+    font-size: 20px;
+    margin-top: 100px;
+
+}
+
+/*Selector de etiqueta*/
+section {
+    margin-left: 0px;
+}
+
+section article {
+    background-color: rgb(210, 125, 19);
+    width: 900px;
+    height: 400px;
+}
+
+section article p {
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+#bordes-header{
+    border: 10px solid #71231D;
+    align-self: center;
+}
+
+/*Etiqueta de clase*/
+.links {
+    font-size: 20px;
+    color: rgb(210, 125, 19);
+    font-family: "TW cent BOLD";
+    text-decoration: none;
+}
+
+/*Selector ID*/
+#estilos-footer {
+    background-color: rgb(210, 125, 19);
+}
+#pie {
+    font-family: "TW cent BOLD";
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*FlexBox*/
+.flex-container {
+    border: 1px solid gray;
+    background: #ccc;
+    padding: 10px;
+    margin: 10px;
+    height: 650px;
+
+/*Propiedades de la caja*/
+/*Activamos Flexbox*/
+display: flex;
+/*Definimos cual es el eje principal, si es una fila (row) o si es una columna (column)*/
+flex-direction: row;
+/*Defina el desborde o salto de línea*/
+flex-wrap: wrap;
+/*Alineamos los elementos en el eje principal*/
+justify-content: space-evenly;
+/*Alineamos los elementos en el eje secundario*/
+align-items: center;
+/*Espacio entre líneas*/
+align-content: space-evenly;
+}
+
+
+
+
+.caja {
+    /*Box modeling*/
+    width: 120px;
+    height: 120px;
+    border: 1px solid gray;
+    margin: 5px;
+
+    /*Tipografía*/ 
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+/*Propiedades de los flex-ítems*/
+.c1 {
+    background-color: lightblue;
+    /*Defino el orden de aparición*/
+    order: 3;
+}
+
+.c2 {
+    background-color: lightcoral;
+    order: 1;
+    /*Derecho a crecer*/
+    flex-grow: 5;
+}
+
+.c3 {
+    background-color: lightgreen;
+    order: 2;
+}
+
+.grid-container {
+    /*Box modeling*/
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid black;
+    margin: auto;
+    height: 900px;
+
+    /*Tipografía*/
+    font-size: 50px;
+    text-align: center;
+    color: black;
+
+    /* Activar Grids*/
+    display: grid;
+    /*Definimos la cantidad de columnas y su ancho (width)*/
+    grid-template-columns: 1fr 2fr 1fr;
+    /*Definimos la cantidad de filas y su ancho (width)*/
+    grid-template-rows: repeat(4,1fr);
+    /*Gutters o huecos entre columnas*/
+    column-gap: 10px;
+    /*Gutters o huecos entre filas*/
+    row-gap: 10px;
+    /*Eje horizontal
+    justify-items: start;
+    */
+    /*Eje vertical
+    align-items: center;
+    */
+    /*Muevo todos los elementos en el eje horizontal*/
+    /*justify-content: center;*/
+    /*Muevo todos los elementos en el eje vertical*/
+    /*align-content: end;*/
+
+
+}
+
+/*Divs que están directamente dentro del grid container*/
+.grid-container > div {
+    padding: 20px;
+    color: #fff;
+    background: #2f89fc;
+}
+
+/*Grid Areas*/
+#grilla {
+    /*Activamos Grid*/
+    display: grid;
+    /*grid areas*/
+    grid-template-areas:
+    "nav    header      header"
+    "nav    productos   publicidad"
+    "nav    servicios   publicidad"
+    "nav    footer      footer"    
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 1fr 75px;
+}
+
+
+.border {
+    border: 1px solid black;
+}
+
+#banner {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background: lightseagreen;
+}
+
+#productos {
+    grid-area: productos;
+    background: lightcoral;
+}
+
+#servicios {
+    grid-area: servicios;
+    background: lightslategray;
+}
+
+#navgrid {
+    grid-area: nav;
+    background: lightgoldenrodyellow;
+}
+
+aside {
+    grid-area: publicidad;
+    background: lightslategray;
+}
+
+footer {
+    grid-area: footer;
+    background: lightsalmon;
+}
+
+/*Asignamos las áreas*/
+header {
+    grid-area: header;
+    background: lightseagreen;
+}
+
+body {
+    background-color: rgb(210, 125, 19);
+}
+
+
+
+/*MediaQueries*/
+
+@media screen and (max-widht: 480px){
+    body {
+        background-color: #71231D;
+    }
+
+}
+
+@media screen and (max-width: 479px){
+    body {
+        background-color: rgb(210, 125, 19);
+    }
+}
+
+/*Navbar con flexbox*/
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a {
+    font-family: "TW cent BOLD";
+    font-size: 20px;
+    color: rgb(210, 125, 19);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Pseudoclases*/
+a:hover{
+    border-radius: 1px;
+    padding: 0px;
+    color: #000000;
+}
+
+
+
+a:active{
+    background: rgb(210, 125, 19);
+    color: black;
+    border-radius: 1px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+/*First and last child*/
+.grupo{
+    width: 500px;
+    margin: 20px auto;
+    background: gray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.parrafos p:first-child {
+    background: blue;
+    color: white;
+}
+
+.parrafos p:last-child {
+    background: #2f89fc;
+    color: aliceblue;
+}
+
+/* First and last type*/
+.elementos p:first-of-type{
+    background-color: green;
+    color: white;
+}
+
+.elementos div:first-of-type{
+    background-color: rgb(243, 247, 16);
+    color: white;
+}
+
+.elementos div:last-of-type{
+    background-color: rgb(119, 0, 255);
+    color: white;
+}
+
+/*nth-child y nth-last-child*/
+.lista :nth-child(3){
+    background: lightcoral;
+    color: white;
+}
+
+/*BEM*/
+.contenedor {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.tarjeta{
+    width: 400px;
+    border: 5px solid black;
+    text-align: center;
+}
