@@ -20,7 +20,7 @@
 p {
     font-family: "TW cent";
 }
-
+/*Navbar home*/
 nav {
     background-color: #000000;
     border-radius: 75px;
@@ -28,7 +28,11 @@ nav {
 }
 
 
-
+.redes {
+   display: flex;
+   justify-content: right;
+   align-items: end; 
+}
 
 
 h1 {
@@ -84,9 +88,6 @@ section article p {
 }
 
 /*Selector ID*/
-#estilos-footer {
-    background-color: rgb(210, 125, 19);
-}
 #pie {
     font-family: "TW cent BOLD";
 }
@@ -248,8 +249,9 @@ aside {
 }
 
 footer {
-    grid-area: footer;
-    background: lightsalmon;
+    background-color: #000000;
+    border-radius: 75px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.50);
 }
 
 /*Asignamos las áreas*/
@@ -259,7 +261,7 @@ header {
 }
 
 body {
-    background-color: rgb(210, 125, 19);
+    background-image: url(../recursos/imagenes/Pattern.jpg);
 }
 
 
@@ -306,7 +308,6 @@ a:hover{
 
 
 a:active{
-    background: rgb(210, 125, 19);
     color: black;
     border-radius: 1px;
     padding: 0px;
