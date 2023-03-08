@@ -11,32 +11,24 @@
     src: url("../fonts/TwCenMTStd-Bold.otf");
 }
 
+@font-face {
+    font-family: "TW cent BOLD ITALIC";
+    src: url("../fonts/TwCenMTStd-UltraBoldIt.otf");
+}
 /*Selector Universal*/
 *{
-    margin: 5px; 
-    padding: 0;
+    margin: 0px;
+    padding: 0px;  
 }
 
-p {
+.text-tagline {
     font-family: "TW cent";
+    text-align: center;
 }
-/*Navbar home*/
-nav {
-    background-color: #000000;
-    border-radius: 75px;
-    box-shadow: 0px 0px 5px rgb(0,0,0,0.50);
-}
-
-
-.redes {
-   display: flex;
-   justify-content: right;
-   align-items: end; 
-}
-
 
 h1 {
     margin-left: 0px;
+    margin-top: 15px;
     font-family: "Haarlem Deco";
     font-size: 50px;
     font-weight: bold;
@@ -52,31 +44,89 @@ h2 {
 }
 
 h3 {
-    font-family: "TW cent BOLD";
-    font-size: 20px;
+    font-family: "TW cent BOLD ITALIC";
+    font-size: 30px;
     margin-top: 100px;
+    text-align: center;
+}
 
+h5 {
+    font-family: "TW cent BOLD";
 }
 
 /*Selector de etiqueta*/
-section {
+.section-home {
+    width: auto;
+    height: 600px;
+    background-image: url(../recursos/imagenes/Empanadas\ tucumanas.jpg);
     margin-left: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 1px black;
 }
 
-section article {
-    background-color: rgb(210, 125, 19);
-    width: 900px;
-    height: 400px;
+section article h3 {
+    margin-top: 200px;
+    align-items: center;
+    color: rgb(210, 125, 19);
+    border-top:solid 2px #000000;
 }
 
 section article p {
-    font-size: 20px;
+    font-size: 25px;
     color: blanchedalmond;
+    border-bottom: solid 2px #000000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 400px;
+}
+
+.img {
+    border:solid 1px #000000;
+    border-radius: 15px;
+    
+}
+
+.botón1 {
+    left: 500px;
 }
 
 #bordes-header{
     border: 10px solid #71231D;
     align-self: center;
+}
+
+.section-productos {
+    width: auto;
+    height: 800px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 18rem;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card-body {
+    background-color: #000000;
+}
+
+.card-text {
+    color: #fff;
+    font-family: "TW cent";
+}
+
+.card-title {
+    color: #fff;
 }
 
 /*Etiqueta de clase*/
@@ -96,45 +146,9 @@ ul{
     list-style-type: none;
 }
 
-/*FlexBox*/
-.flex-container {
-    border: 1px solid gray;
-    background: #ccc;
-    padding: 10px;
-    margin: 10px;
-    height: 650px;
-
-/*Propiedades de la caja*/
-/*Activamos Flexbox*/
-display: flex;
-/*Definimos cual es el eje principal, si es una fila (row) o si es una columna (column)*/
-flex-direction: row;
-/*Defina el desborde o salto de línea*/
-flex-wrap: wrap;
-/*Alineamos los elementos en el eje principal*/
-justify-content: space-evenly;
-/*Alineamos los elementos en el eje secundario*/
-align-items: center;
-/*Espacio entre líneas*/
-align-content: space-evenly;
-}
 
 
 
-
-.caja {
-    /*Box modeling*/
-    width: 120px;
-    height: 120px;
-    border: 1px solid gray;
-    margin: 5px;
-
-    /*Tipografía*/ 
-    color:black;
-    font-weight: bolder;
-    text-align: center;
-
-}
 
 /*Propiedades de los flex-ítems*/
 .c1 {
@@ -155,110 +169,12 @@ align-content: space-evenly;
     order: 2;
 }
 
-.grid-container {
-    /*Box modeling*/
-    width: 90%;
-    max-width: 1000px;
-    border: 10px solid black;
-    margin: auto;
-    height: 900px;
-
-    /*Tipografía*/
-    font-size: 50px;
-    text-align: center;
-    color: black;
-
-    /* Activar Grids*/
-    display: grid;
-    /*Definimos la cantidad de columnas y su ancho (width)*/
-    grid-template-columns: 1fr 2fr 1fr;
-    /*Definimos la cantidad de filas y su ancho (width)*/
-    grid-template-rows: repeat(4,1fr);
-    /*Gutters o huecos entre columnas*/
-    column-gap: 10px;
-    /*Gutters o huecos entre filas*/
-    row-gap: 10px;
-    /*Eje horizontal
-    justify-items: start;
-    */
-    /*Eje vertical
-    align-items: center;
-    */
-    /*Muevo todos los elementos en el eje horizontal*/
-    /*justify-content: center;*/
-    /*Muevo todos los elementos en el eje vertical*/
-    /*align-content: end;*/
-
-
-}
-
-/*Divs que están directamente dentro del grid container*/
-.grid-container > div {
-    padding: 20px;
-    color: #fff;
-    background: #2f89fc;
-}
-
-/*Grid Areas*/
-#grilla {
-    /*Activamos Grid*/
-    display: grid;
-    /*grid areas*/
-    grid-template-areas:
-    "nav    header      header"
-    "nav    productos   publicidad"
-    "nav    servicios   publicidad"
-    "nav    footer      footer"    
-    ;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 1fr 75px;
-}
 
 
 .border {
     border: 1px solid black;
 }
 
-#banner {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: header;
-    background: lightseagreen;
-}
-
-#productos {
-    grid-area: productos;
-    background: lightcoral;
-}
-
-#servicios {
-    grid-area: servicios;
-    background: lightslategray;
-}
-
-#navgrid {
-    grid-area: nav;
-    background: lightgoldenrodyellow;
-}
-
-aside {
-    grid-area: publicidad;
-    background: lightslategray;
-}
-
-footer {
-    background-color: #000000;
-    border-radius: 75px;
-    box-shadow: 0px 0px 5px rgb(0,0,0,0.50);
-}
-
-/*Asignamos las áreas*/
-header {
-    grid-area: header;
-    background: lightseagreen;
-}
 
 body {
     background-image: url(../recursos/imagenes/Pattern.jpg);
@@ -268,25 +184,16 @@ body {
 
 /*MediaQueries*/
 
-@media screen and (max-widht: 480px){
-    body {
-        background-color: #71231D;
-    }
-
-}
-
-@media screen and (max-width: 479px){
-    body {
-        background-color: rgb(210, 125, 19);
-    }
-}
-
 /*Navbar con flexbox*/
 nav {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #000000;
+    border: solid 2px #fff;
+    border-radius: 75px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.50);
 
 }
 
@@ -309,62 +216,37 @@ a:hover{
 
 a:active{
     color: black;
-    border-radius: 1px;
+    border-radius: 0px;
     padding: 0px;
     font-size: 20px;
 }
 
-/*First and last child*/
-.grupo{
-    width: 500px;
-    margin: 20px auto;
-    background: gray;
-    padding: 10px;
-    font-size: 20px;
+
+footer {
+    width: auto;
+    height: 50px;
+    border: solid 2px #fff;
+    background-color: #000000;
+    border-radius: 75px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.50);
+    display: flex;
+    justify-content: end;
+
 }
 
-.parrafos p:first-child {
-    background: blue;
-    color: white;
+
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content: center;
+
 }
 
-.parrafos p:last-child {
-    background: #2f89fc;
-    color: aliceblue;
-}
+.dueño{
+    color: #fff;
+    text-align: start;
 
-/* First and last type*/
-.elementos p:first-of-type{
-    background-color: green;
-    color: white;
-}
-
-.elementos div:first-of-type{
-    background-color: rgb(243, 247, 16);
-    color: white;
-}
-
-.elementos div:last-of-type{
-    background-color: rgb(119, 0, 255);
-    color: white;
-}
-
-/*nth-child y nth-last-child*/
-.lista :nth-child(3){
-    background: lightcoral;
-    color: white;
-}
-
-/*BEM*/
-.contenedor {
-    max-width: 500px;
-    width: 100%;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-
-.tarjeta{
-    width: 400px;
-    border: 5px solid black;
-    text-align: center;
 }
