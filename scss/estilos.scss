@@ -1,0 +1,337 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "TW cent";
+    src: url("../fonts/TwCenMTStd-LightItalic.otf");
+}
+@font-face {
+    font-family: "Haarlem Deco";
+    src: url("../fonts/Haarlem Deco DEMO.otf");
+}
+@font-face {
+    font-family: "TW cent BOLD";
+    src: url("../fonts/TwCenMTStd-Bold.otf");
+}
+@font-face {
+    font-family: "TW cent BOLD ITALIC";
+    src: url("../fonts/TwCenMTStd-UltraBoldIt.otf");
+}
+
+@font-face {
+    font-family: "TW cent REGULAR";
+    src: url(../fonts/TwCenMTStd-SemiMedium.otf);
+}
+
+/*HOME*/
+
+/*Selector Universal*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*MediaQueries*/
+/*Navbar con flexbox*/
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    border: solid 2px #fff;
+    border-radius: 75px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+body {
+    background-image: url(../recursos/imagenes/Pattern.png);
+    
+}
+
+.text-tagline {
+    font-family: "TW cent";
+    text-align: center;
+}
+
+h1 {
+    margin-left: 0px;
+    margin-top: 15px;
+    font-family: "Haarlem Deco";
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2 {
+    font-family: "TW cent BOLD";
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3 {
+    font-family: "TW cent BOLD ITALIC";
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h4 {
+    font-family: "TW cent";
+    color: #fff;
+    font-size: 15px;
+}
+
+h5 {
+    font-family: "TW cent BOLD";
+}
+
+/*LINKS*/
+
+a {
+    font-family: "TW cent BOLD";
+    font-size: 20px;
+    color: rgb(210, 125, 19);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Etiqueta de clase*/
+.links {
+    font-size: 20px;
+    color: rgb(210, 125, 19);
+    font-family: "TW cent BOLD";
+    text-decoration: none;
+}
+
+.market {
+    width: auto;
+    height: 150px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+    border-radius: 50px;
+}
+
+.pedir {
+    font-family: "TW cent BOLD";
+    font-size: 20px;
+    color: #fff;
+    margin-top: 0px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+
+.btn {
+    font-family: "TW cent BOLD";
+    color: rgb(210, 125, 19);
+    margin-left: 30px;
+}
+
+.historia-ona {
+    width: auto;
+    height: 800px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.back-mostaza {
+    width: 700px;
+    height: 850px;
+    padding-top: 40px;
+    background-color: rgb(210, 125, 19);
+}
+
+.back-negro {
+    width: 450px;
+    height: 750px;
+    background-color: #000000;
+    margin-left: -50px;
+    margin-top: 50px;
+    border: solid 0px 0px 0px 2px white;
+    box-shadow: 8px black;
+}
+
+.ona-perra {
+    width: 420px;
+    height: 720px;
+    margin: 15px;
+    background-size: 150% 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-ona {
+    font-family: "TW cent REGULAR";
+    text-align: left;
+    font-size: 20px;
+    color: #000000;
+    margin: 20px;
+    margin-right: 65px;
+}
+
+.porqué {
+    margin: 50px;
+    color: #000000;
+}
+
+.offcanvas-footer {
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-canva {
+    font-family: "Haarlem Deco";
+    color: #000000;
+    font-size: 35px;
+} 
+
+/*PRODUCTOS*/
+
+/*Selector de etiqueta*/
+.img-1 {
+    width: auto;
+    height: 700px;
+    background-image: url(../recursos/imagenes/Empanadas\ tucumanas.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 1px black;
+}
+
+section article h3 {
+    margin-top: 200px;
+    align-items: center;
+    color: rgb(210, 125, 19);
+}
+
+section article p {
+    font-size: 25px;
+    color: blanchedalmond;
+}
+
+.section-pedido {
+    width: auto;
+    height: 1500px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+.fila1 {
+    font-family: "TW cent BOLD";
+    font-size: 20px;
+    color: #fff;
+}
+
+#bordes-header {
+    border: 10px solid #71231D;
+    align-self: center;
+}
+
+.section-productos {
+    width: auto;
+    height: 1300px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 18rem;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card-body {
+    background-color: #000000;
+    height: 150px;
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+.card-text {
+    color: #fff;
+    font-family: "TW cent";
+}
+
+.card-title {
+    color: #fff;
+}
+
+
+/*Selector ID*/
+#pie {
+    font-family: "TW cent BOLD";
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+/*Pseudoclases*/
+a:hover {
+    border-radius: 1px;
+    padding: 0px;
+    color: #000000;
+}
+
+a:active {
+    color: black;
+    border-radius: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+footer {
+    width: auto;
+    height: 70px;
+    margin-top: 50px;
+    border: solid 2px #fff;
+    background-color: #000000;
+    border-radius: 75px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes {
+    width: 15%;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+}
+
+.dueño {
+    color: #fff;
+    text-align: start;
+}
+
+body {
+    background-color: #000000;
+}
+
+/*# sourceMappingURL=estilos.css.map */
