@@ -219,20 +219,6 @@ section article p {
   color: blanchedalmond;
 }
 
-.section-pedido {
-  width: auto;
-  height: 1500px;
-  margin-top: 150px;
-  display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
-}
-
-.fila1 {
-  font-family: "TW cent BOLD";
-  font-size: 20px;
-  color: #fff;
-}
-
 #bordes-header {
   border: 10px solid #71231D;
   align-self: center;
@@ -270,6 +256,95 @@ section article p {
 
 .card-title {
   color: #fff;
+}
+
+/*PEDINOS*/
+/*left*/
+.section-pedido {
+  width: auto;
+  height: 1500px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+}
+
+/*medium*/
+/*fila 1*/
+.medium {
+  display: grid;
+  grid-template-areas: "contenedor-form-entrega" "contenedor-form-datos" "contenedor-form-producto" "contenedor-form-abonar" "contenedor-form-total" "contenedor-form-vuelto";
+  grid-template-columns: auto;
+  grid-template-rows: 50px 150px 350px 100px 50px 50px;
+}
+
+.form {
+  font-family: "TW cent BOLD";
+  font-size: 20px;
+  color: #fff;
+  margin: 10px;
+}
+
+.contenedor-form-entrega {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-check {
+  margin-top: 8px;
+}
+
+.form-check-label {
+  font-family: "TW cent";
+  color: white;
+}
+
+/*fila 2*/
+.contenedor-h3-datos {
+  width: 250px;
+  margin-left: 18px;
+}
+
+.contenedor-form-datos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  width: 230px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.form-label {
+  width: 350px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50px;
+}
+
+input.form-control-email::-moz-placeholder {
+  color: rgb(104, 103, 103);
+  font-family: "TW cent";
+}
+
+input.form-control-email::placeholder {
+  color: rgb(104, 103, 103);
+  font-family: "TW cent";
+}
+
+input.form-control::-moz-placeholder {
+  color: rgb(104, 103, 103);
+  font-family: "TW cent";
+}
+
+input.form-control::placeholder {
+  color: rgb(104, 103, 103);
+  font-family: "TW cent";
 }
 
 /*Selector ID*/
@@ -313,15 +388,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-content: center;
-}
-
-.dueño {
-  color: #fff;
-  text-align: start;
-}
-
-body {
-  background-color: #000000;
 }
 
 /*# sourceMappingURL=estilos.css.map */
