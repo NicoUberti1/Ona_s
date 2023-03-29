@@ -277,7 +277,6 @@ section article p {
 
 /*medium*/
 
-/*fila 1*/
 
 .medium {
     display: grid;
@@ -289,17 +288,7 @@ section article p {
     "columna1-fila5 columna2-fila5"
     "columna1-fila6 columna2-fila6";
     grid-template-columns: 250px auto;
-    grid-template-rows: 80px 350px 500px 100px 50px 50px;
-    /*display: grid;
-    grid-template-areas: 
-    "contenedor-form-entrega"
-    "contenedor-form-datos"
-    "contenedor-form-producto"
-    "contenedor-form-abonar"
-    "contenedor-form-total"
-    "contenedor-form-vuelto";
-    grid-template-columns: auto;
-    grid-template-rows: 50px 150px 350px 100px 50px 50px;*/
+    grid-template-rows: 80px 120px 400px 100px 50px 50px;
 }
 
 .form {
@@ -309,11 +298,13 @@ section article p {
     margin: 10px;
 }
 
+/*fila 1*/
+
 .columna2-fila1 {
     width: auto;
     height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .form-check {
@@ -333,7 +324,7 @@ section article p {
     height: 40px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .form-control {
@@ -341,6 +332,8 @@ section article p {
     height: 40px;
     background-color: black;
     border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 input.form-control::placeholder {
@@ -349,10 +342,11 @@ input.form-control::placeholder {
 }
 
 input#exampleFormControlInput1.form-control-email {
-    width: 300px;
+    width: 250px;
     height: 40px;
     padding: 6px 12px;
-    background-color: black;
+    margin-right: 5px;
+    background-color: rgb(0, 0, 0);
     border: 1px solid white;
     border-radius: 50px;
 }
@@ -372,17 +366,7 @@ input.form-control::placeholder {
     width: auto;
     height: 40px;
     display: flex;
-    justify-content: space-evenly;
-}
-
-
-input#exampleFormControlInput1.form-control-email {
-    width: 300px;
-    height: 40px;
-    padding: 6px 12px;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 50px;
+    justify-content: center;
 }
 
 input#exampleFormControlInput1::placeholder {
@@ -390,6 +374,37 @@ input#exampleFormControlInput1::placeholder {
     font-family: "TW cent";
 }
 
+/*fila 3*/
+
+.columna1-fila3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-fila3 {
+    font-family: "TW cent BOLD";
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+.btn2 {
+    font-family: "TW cent";
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    width: 115px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.btn2:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
 
 
 
