@@ -282,6 +282,16 @@ section article p {
 .medium {
     display: grid;
     grid-template-areas: 
+    "columna1-fila1 columna2-fila1"
+    "columna1-fila2 columna2-fila2"
+    "columna1-fila3 columna2-fila3"
+    "columna1-fila4 columna2-fila4"
+    "columna1-fila5 columna2-fila5"
+    "columna1-fila6 columna2-fila6";
+    grid-template-columns: 250px auto;
+    grid-template-rows: 80px 350px 500px 100px 50px 50px;
+    /*display: grid;
+    grid-template-areas: 
     "contenedor-form-entrega"
     "contenedor-form-datos"
     "contenedor-form-producto"
@@ -289,7 +299,7 @@ section article p {
     "contenedor-form-total"
     "contenedor-form-vuelto";
     grid-template-columns: auto;
-    grid-template-rows: 50px 150px 350px 100px 50px 50px;
+    grid-template-rows: 50px 150px 350px 100px 50px 50px;*/
 }
 
 .form {
@@ -299,7 +309,7 @@ section article p {
     margin: 10px;
 }
 
-.contenedor-form-entrega {
+.columna2-fila1 {
     width: auto;
     height: 50px;
     display: flex;
@@ -317,41 +327,69 @@ section article p {
 
 /*fila 2*/
 
-.contenedor-h3-datos {
-    width: 250px;
-    margin-left: 18px;
-}
 
-.contenedor-form-datos {
+.nombre-apellido {
+    width: auto;
+    height: 40px;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .form-control {
-    width: 230px;
+    width: 250px;
     height: 40px;
     background-color: black;
     border-radius: 50px;
-}
-
-.form-label {
-    width: 350px;
-    height: 40px;
-    background-color: black;
-    border-radius: 50px;
-}
-
-input.form-control-email::placeholder {
-    color: rgb(104, 103, 103);
-    font-family: "TW cent";
 }
 
 input.form-control::placeholder {
     color: rgb(104, 103, 103);
     font-family: "TW cent";
 }
+
+input#exampleFormControlInput1.form-control-email {
+    width: 300px;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+input#exampleFormControlInput1::placeholder {
+    color: rgb(104, 103, 103);
+    font-family: "TW cent";
+}
+
+
+input.form-control::placeholder {
+    color: rgb(104, 103, 103);
+    font-family: "TW cent";
+}
+
+.email-telefono {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+input#exampleFormControlInput1.form-control-email {
+    width: 300px;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+input#exampleFormControlInput1::placeholder {
+    color: rgb(104, 103, 103);
+    font-family: "TW cent";
+}
+
 
 
 
