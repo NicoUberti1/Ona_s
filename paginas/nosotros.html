@@ -4,33 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../recursos/logo/Ona's logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../recursos/logo/LOGO ONAS.png" type="image/x-icon">
+    <!--Bootstrap vía CDN-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- Hoja de Estilos CSS-->
 	<link rel="stylesheet" href="../css/estilos.css">
     <title>Nosotros</title>
 </head>
+
 <body>
-    <!--Metodología BEM-->
-<section class="contenedor">
-    <!--Bloque 1-->
-    <article class="tarjeta">
-        <a class="tarjeta__miniatura" href="#">
-            <img class="tarjeta__imagen" src="../recursos/imagenes/Empanadas surtidas.jpg" alt="empanadas surtidas">
+
+    <!--HTML Semántico-->
+<nav class="navbar navbar-dark bg-black fixed-top">
+    <div class="container-fluid">
+        
+<!--Enlaces IMG-->
+        <a href="../index.html">
+            <img src="../recursos/logo/LOGO ONAS.png" alt="Logo-Ona's" width="75px">
         </a>
-
-        <article class="tarjeta__textos">
-            <h3 class="tarjeta__titulo">
-                <a class="tarjeta__enlace" href="../paginas/productos.html"></a>
-            </h3>
-            <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, sed?</p>
-
+        <h2>Nuestro sabor nos define</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbarh">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
             
+<!--Enlaces relativos-->
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="links" href="../paginas/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                <a class="links" href="../paginas/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a class="links" href="../paginas/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="links" href="../paginas/pedido.html">Hacé tu pedido</a>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer">
+            <h3 class="footer-canva">ONA'S</h3>
 
-        </article>
-
+        </div>
+    </div>
+</div>
+</nav>	
+<div class="logo-container">
+    <img class="logo-negativo" src="../recursos/imagenes/Logo vector Ona's (blanco).png" alt="logo en negativo">
+</div>
+<section class="section-nosotros">
+    <article class="article-nosotros">
+        <div class="campo-imagen-1">
+            <img class="saladas-campo1" src="../recursos/imagenes/IMG_9847.jpg" alt="Empanadas saladas">
+        </div>
+        <div class="campo-texto-1">
+            <p class="p-nosotros">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum a excepturi explicabo ullam, quibusdam distinctio maiores suscipit fuga unde laboriosam officiis, vel nobis amet assumenda pariatur? Labore quos, animi expedita necessitatibus quisquam culpa magnam deserunt quis ipsum eveniet fugit harum beatae nesciunt soluta eligendi facilis veritatis provident totam natus est explicabo, corrupti voluptas id distinctio? Laudantium et incidunt quaerat itaque nobis eaque est architecto molestias possimus ipsam. Incidunt delectus aspernatur deleniti ratione quam sint nemo? Hic, laudantium laborum. Sapiente, iusto pariatur? Rem asperiores tenetur magnam. Beatae, aspernatur. Repellat voluptatibus laboriosam, sed magnam esse repellendus iure commodi tenetur expedita temporibus debitis non facilis, laudantium dicta mollitia culpa nisi dignissimos eum! Quo, dicta aliquam necessitatibus molestias, quibusdam in eius ratione, itaque modi possimus minima earum autem esse. Temporibus, itaque suscipit. Repudiandae asperiores aspernatur itaque sit inventore quis, laudantium necessitatibus repellendus labore sapiente est aperiam explicabo consectetur sunt ipsum eum numquam nam pariatur quam obcaecati qui minima ad.</p>
+        </div>
+        <div class="campo-imagen-2">
+            <img class="napo-campo2" src="../recursos/imagenes/Pizza napolitana - copia.png" alt="pizza napo">
+        </div>
+        <div class="campo-imagen-3">
+            <img class="pollo-campo3" src="../recursos/imagenes/pollo prueba.png" alt="empas de pollo">
+        </div>
+        <div class="campo-texto-2">
+            <p class="p-nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident omnis tempora atque temporibus officia harum, dolor eligendi numquam, voluptatibus nemo. Natus perspiciatis magni molestias quasi quod eius sint vitae sit ipsam maxime qui sed, quaerat nihil hic soluta quis debitis deleniti nisi ut. Vitae cumque nemo laboriosam, fugiat vero, quas, eius molestiae quaerat praesentium laborum temporibus voluptates nobis quis. Veritatis sed reiciendis unde inventore est et architecto. Libero nemo sint velit cumque! Fugit pariatur natus, dolor eveniet mollitia quae blanditiis veritatis sit saepe earum, rem minus incidunt cum dignissimos ratione eius molestias. Magnam quae odit est rem exercitationem excepturi. Sequi laboriosam voluptatibus velit corrupti provident iste, suscipit nesciunt hic reprehenderit. Commodi temporibus est voluptatem aliquid, sit minus, facere asperiores molestias recusandae, itaque beatae illum alias corporis iusto provident doloribus quibusdam aut veniam amet sed nesciunt delectus. Laborum nemo quaerat a assumenda fugiat quasi exercitationem molestias? Maxime accusantium voluptatem excepturi accusamus doloremque explicabo ipsa ab tempore cupiditate ipsum, sit consequuntur? Quasi sint inventore quam sequi quod doloremque deleniti! Perferendis recusandae non, delectus totam sequi repellat similique mollitia labore in ullam.
+            </p>
+        </div>
+        <div class="campo-imagen-4">
+            <img class="pizza-campo4" src="../recursos/imagenes/pizza nosotros.jpg" alt="muzza">
+        </div>
     </article>
-
 </section>
     
+
+
+
+
+
+<footer>
+    <h4>Desarrollado por Nicolás Uberti</h4>
+<!--Enlaces Absolutos-->
+    <div class="redes">
+        <a href="https://www.instagram.com/onas.empanadas/">
+            <img src="../recursos/imagenes/Logo instagram.png" alt="Logo Instagran" width="30px">
+        </a>
+        <a href="https://www.facebook.com/onas.empanadas">
+            <img src="../recursos/imagenes/logo Facebook.png" alt="Logo Facebook" width="30px">
+        </a>
+    </div>
+</footer>
+
 </body>
 </html>

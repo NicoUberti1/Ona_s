@@ -21,7 +21,7 @@
     src: url(../fonts/TwCenMTStd-SemiMedium.otf);
 }
 
-/*HOME*/
+/*---------------PÁGINA HOME---------------*/
 
 /*Selector Universal*/
 * {
@@ -29,8 +29,11 @@
     padding: 0px;
 }
 
-/*MediaQueries*/
 /*Navbar con flexbox*/
+
+.body-home {
+    width: auto;
+}
 
 nav {
     margin-top: 10px;
@@ -45,10 +48,6 @@ nav {
 
 .nav-item {
     text-align: center;
-}
-
-.border {
-    border: 1px solid black;
 }
 
 body {
@@ -81,8 +80,6 @@ h2 {
 h3 {
     font-family: "TW cent BOLD ITALIC";
     font-size: 30px;
-    margin-top: 100px;
-    text-align: center;
 }
 
 h4 {
@@ -139,6 +136,39 @@ a {
     margin-left: 30px;
 }
 
+/*Selector de etiqueta*/
+.img-1 {
+    width: auto;
+    height: 700px;
+    background-image: url(../recursos/imagenes/Empanadas\ tucumanas.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-home {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section article h3 {
+    color: rgb(210, 125, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section article p {
+    font-size: 25px;
+    color: blanchedalmond;
+}
+
 .historia-ona {
     width: auto;
     height: 800px;
@@ -161,7 +191,6 @@ a {
     background-color: #000000;
     margin-left: -50px;
     margin-top: 50px;
-    border: solid 0px 0px 0px 2px white;
     box-shadow: 8px black;
 }
 
@@ -169,7 +198,6 @@ a {
     width: 420px;
     height: 720px;
     margin: 15px;
-    background-size: 150% 150%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -201,34 +229,9 @@ a {
     font-size: 35px;
 } 
 
-/*PRODUCTOS*/
+/*---------------PÁGINA PRODUCTOS---------------*/
 
 /*Selector de etiqueta*/
-.img-1 {
-    width: auto;
-    height: 700px;
-    background-image: url(../recursos/imagenes/Empanadas\ tucumanas.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: solid 1px black;
-}
-
-section article h3 {
-    margin-top: 200px;
-    align-items: center;
-    color: rgb(210, 125, 19);
-}
-
-section article p {
-    font-size: 25px;
-    color: blanchedalmond;
-}
-
-#bordes-header {
-    border: 10px solid #71231D;
-    align-self: center;
-}
 
 .section-productos {
     width: auto;
@@ -241,14 +244,15 @@ section article p {
 
 .card {
     width: 18rem;
-    height: 150px;
+    height: 180px;
+    border: 1px solid white;
     justify-self: center;
     align-self: center;
 }
 
 .card-body {
     background-color: #000000;
-    height: 150px;
+
 }
 
 .card-img-top {
@@ -264,12 +268,12 @@ section article p {
     color: #fff;
 }
 
-/*PEDINOS*/
+/*---------------PÁGINA PEDINOS---------------*/
 
 /*left*/
 .section-pedido {
     width: auto;
-    height: 1500px;
+    height: 900px;
     margin-top: 150px;
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
@@ -288,7 +292,7 @@ section article p {
     "columna1-fila5 columna2-fila5"
     "columna1-fila6 columna2-fila6";
     grid-template-columns: 250px auto;
-    grid-template-rows: 80px 120px 400px 100px 50px 50px;
+    grid-template-rows: 80px 120px 450px 100px 50px 50px;
 }
 
 .form {
@@ -357,11 +361,6 @@ input#exampleFormControlInput1::placeholder {
 }
 
 
-input.form-control::placeholder {
-    color: rgb(104, 103, 103);
-    font-family: "TW cent";
-}
-
 .email-telefono {
     width: auto;
     height: 40px;
@@ -376,12 +375,7 @@ input#exampleFormControlInput1::placeholder {
 
 /*fila 3*/
 
-.columna1-fila3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
 .form-fila3 {
     font-family: "TW cent BOLD";
@@ -405,6 +399,214 @@ input#exampleFormControlInput1::placeholder {
     background-color: #fff;
     color: rgb(0, 0, 0);
 }
+
+.columna2-fila3 {
+    margin-top: 15px;
+}
+
+.empanadas {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizzas {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.sanguches {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+/*fila 4*/
+
+.columna2-fila4 {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*fila 5*/
+/*fila 6*/
+
+.form-control2 {
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*---------------PÁGINA CONTACTO---------------*/
+
+.form-contacto {
+    font-family: "TW cent BOLD";
+    font-size: 20px;
+    color: #fff;
+    margin-top: 150px;
+}
+
+.section-contacto {
+    width: auto;
+    height: 900px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+.form-control-contacto {
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input.form-control-contacto::placeholder {
+    color: rgb(104, 103, 103);
+    font-family: "TW cent";
+}
+
+.medium-contacto {
+    display: grid;
+    grid-template-areas: 
+    "contacto-nombre campo-nombre"
+    "contacto-apellido campo-apellido"
+    "contacto-edad campo-edad"
+    "contacto-teléfono campo-teléfono"
+    "contacto-email campo-email"
+    "contacto-email campo-email";
+    grid-template-columns: 470px 470px;
+    grid-template-rows: 80px 80px 80px 80px 80px 250px;
+    grid-gap: 5px;
+}
+
+.contacto-nombre {
+    margin-left: 150px;
+}
+.contacto-apellido {
+    margin-left: 150px;
+}
+.contacto-edad {
+    margin-left: 150px;
+}
+.contacto-teléfono {
+    margin-left: 150px;
+}
+.contacto-email {
+    margin-left: 150px;
+}
+.contacto-comentario {
+    margin-left: 150px;
+}
+
+.text-area {
+    width: 470px;
+    height: 200px;
+    background-color: black;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.botón-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+/*---------------PÁGINA NOSOTROS---------------*/
+
+.logo-container{
+    width: auto;
+    height: 130px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-negativo {
+    width: 130px;
+    height: 130px;
+}
+
+.form-nosotros {
+    font-family: "TW cent BOLD";
+    font-size: 60px;
+    color: #fff;
+    margin-top: 150px;
+}
+
+.section-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-nosotros {
+    width: 1000px;
+    height: auto;
+    margin-top: 150px;
+    display: grid;
+    grid-template-areas: 
+    "campo-imagen-1 campo-texto-1"
+    "campo-imagen-2 campo-imagen-3"
+    "campo-texto-2 campo-imagen-4"
+    ;
+    grid-template-rows: 500px 200px 500px;
+    grid-template-columns: 3fr 3fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.p-nosotros {
+    font-family: "TW cent REGULAR";
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+}
+
+.campo-imagen-1 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.saladas-campo1 {
+    width: 500px;
+    height: 500px;
+}
+
+.napo-campo2 {
+    width: 500px;
+}
+
+.pollo-campo3 {
+    width: 500px;
+}
+
+.pizza-campo4 {
+    width: 500px;
+}
+
+
+
+
 
 
 
@@ -459,6 +661,132 @@ footer {
     align-content: center;
 }
 
+/*----------------------------------------MEDIA QUERIES----------------------------------------*/
+@media screen and (max-width: 480px) {
+    
+/*----------------------------------------HOME----------------------------------------*/
+
+h2 {
+    font-size: 19px;
+}
+
+
+.section-home {
+    width: auto;
+}
+
+.img-1 {
+    width: auto;
+    height: 300px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.text-tagline {
+    font-size: 16px;
+}
+
+.market {
+    height: 80px;
+    border-radius: 65px;
+}
+
+.pedir {
+    font-size: 16px;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.navbar {
+    width: 480px;
+}
+
+.historia-ona {
+    width: auto;
+    height: auto;
+    display: block
+}
+
+.back-mostaza {
+    width: auto;
+    height: 850px;
+    background-color: rgb(210, 125, 19);
+}
+
+.back-negro {
+    width: 400px;
+    height: 410px;
+    margin-top: -180px;
+    margin-left: 40px;
+    background-color: #000000;
+    box-shadow: 8px black;
+}
+
+.ona-perra {
+    width: 250px;
+    height: 420px;
+    margin-left: 75px;
+}
+
+.porqué {
+    margin: 10px;
+    color: #000000;
+    font-size: 25px;
+}
+
+.text-ona {
+    font-family: "TW cent REGULAR";
+    text-align: justify;
+    font-size: 16px;
+    color: #000000;
+    margin: 20px;
+}
+
+/*----------------------------------------PRODUCTOS----------------------------------------*/
+
+.section-productos {
+    width: auto;
+    height: auto;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 12rem;
+    height: 270px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card-img-top {
+    height: 100px;
+}
+
+.card-body {
+    margin-bottom: none;
+}
+
+.card-title {
+    font-size: 12px;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+}
+
+/*----------------------------------------PRODUCTOS----------------------------------------*/
 
 
 /*# sourceMappingURL=estilos.css.map */
