@@ -437,6 +437,11 @@ input#exampleFormControlInput1::placeholder {
 }
 
 /*---------------PÁGINA CONTACTO---------------*/
+.comunicate-h3 {
+  display: flex;
+  justify-content: center;
+}
+
 .form-contacto {
   font-family: "TW cent BOLD";
   font-size: 20px;
@@ -452,7 +457,7 @@ input#exampleFormControlInput1::placeholder {
   grid-template-columns: 2fr 4fr 2fr;
 }
 
-.form-control-contacto {
+.comunicate .form-control-contacto {
   width: 250px;
   height: 40px;
   background-color: black;
@@ -474,7 +479,7 @@ input.form-control-contacto::placeholder {
 
 .medium-contacto {
   display: grid;
-  grid-template-areas: "contacto-nombre campo-nombre" "contacto-apellido campo-apellido" "contacto-edad campo-edad" "contacto-teléfono campo-teléfono" "contacto-email campo-email" "contacto-email campo-email";
+  grid-template-areas: "contacto-nombre campo-nombre" "contacto-apellido campo-apellido" "contacto-edad campo-edad" "contacto-teléfono campo-teléfono" "contacto-email campo-email" "contacto-comentario campo-comentario";
   grid-template-columns: 470px 470px;
   grid-template-rows: 80px 80px 80px 80px 80px 250px;
   grid-gap: 5px;
@@ -732,6 +737,240 @@ footer {
   .card-text {
     font-size: 12px;
   }
+  /*----------------------------------------NOSOTROS----------------------------------------*/
+  .logo-negativo {
+    width: 90px;
+    height: 90px;
+  }
+  .logo-container {
+    width: auto;
+    height: 90px;
+  }
+  .form-nosotros {
+    font-family: "TW cent BOLD";
+    font-size: 60px;
+    color: #fff;
+    margin-top: 150px;
+  }
+  .article-nosotros {
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: "campo-imagen-1" "campo-texto-1" "campo-imagen-2" "campo-imagen-3" "campo-texto-2" "campo-imagen-4";
+    grid-template-rows: 450px 450px 200px 200px 460px 480px;
+    grid-template-columns: 450px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
+  }
+  .p-nosotros {
+    font-size: 16px;
+  }
+  .campo-imagen-1 {
+    position: relative;
+    width: 450px;
+    height: auto;
+  }
+  .saladas-campo1 {
+    width: 450px;
+    height: 450px;
+  }
+  .napo-campo2 {
+    width: 450px;
+  }
+  .pollo-campo3 {
+    width: 450px;
+  }
+  .pizza-campo4 {
+    width: 450px;
+  }
+  /*----------------------------------------PEDINOS---------------------------------------*/
+  /*left*/
+  .section-pedido {
+    width: auto;
+    height: auto;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .left {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*medium*/
+  .medium {
+    display: grid;
+    grid-template-areas: "columna1-fila1" "columna2-fila1" "columna1-fila2" "columna2-fila2" "columna1-fila3" "columna2-fila3" "columna1-fila4" "columna2-fila4" "columna1-fila5" "columna2-fila5" "columna1-fila6" "columna2-fila6";
+    grid-template-columns: 480px;
+    grid-template-rows: 50px 50px 50px 120px 50px 480px 80px 50px 50px 30px 50px 50px;
+  }
+  .form {
+    font-size: 16px;
+  }
+  /*fila 1*/
+  .columna1-fila1 {
+    display: flex;
+    justify-content: center;
+  }
+  /*fila 2*/
+  /*fila 3*/
+  .columna1-fila2 {
+    display: flex;
+    justify-content: center;
+  }
+  /*fila 4*/
+  /*fila 5*/
+  .columna1-fila3 {
+    display: flex;
+    justify-content: center;
+  }
+  /*fila 6*/
+  .subtítulo-empanadas {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .empanadas {
+    height: 150px;
+    flex-wrap: wrap;
+  }
+  .subtítulo-pizzas {
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .pizzas {
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  .subtítulo-sanguches {
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .sanguches {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*fila 7*/
+  .columna1-fila4 {
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  /*fila 8*/
+  /*fila 9*/
+  .columna1-fila5 {
+    display: flex;
+    justify-content: center;
+  }
+  /*fila 10*/
+  /*fila 11*/
+  .columna1-fila6 {
+    display: flex;
+    justify-content: center;
+  }
+  /*fila 12*/
+  .columna2-fila6 {
+    display: flex;
+    justify-content: center;
+  }
+  /*----------------------------------------CONTACTO----------------------------------------*/
+  .comunicate-h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .section-contacto {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .aside-left {
+    width: 0%;
+    height: 0%;
+  }
+  .medium-contacto {
+    grid-template-areas: "contacto-nombre" "campo-nombre" "contacto-apellido" "campo-apellido" "contacto-edad" "campo-edad" "contacto-teléfono" "campo-teléfono" "contacto-email" "campo-email" "contacto-comentario" "campo-comentario";
+    grid-template-columns: 450px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 250px;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+  .contacto-nombre {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .campo-nombre {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto-apellido {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .campo-apellido {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto-edad {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .campo-edad {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto-teléfono {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .campo-teléfono {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto-email {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .campo-email {
+    display: flex;
+    justify-content: center;
+  }
+  .contacto-comentario {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .campo-comentario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .botón-enviar {
+    margin-top: 0px;
+  }
+  .btn.btn-outline-light.btn-md {
+    margin-left: 0px;
+  }
+  .aside-right {
+    width: 0%;
+    height: 0%;
+  }
 }
-/*----------------------------------------PRODUCTOS----------------------------------------*/
 /*# sourceMappingURL=estilos.css.map */
